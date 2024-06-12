@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaSctipt</title>
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <button onclick="greet()"> Greet </button>
+    <label>User Name: </label>
+    <input type="text" id="username">
+    <br>
+    <button onclick="greetuser()">Greet User</button>
     <script>
-        function greet()
+        function greetuser()
         {
-        document.write("Welcome to JavaSctipt....")
+            var uname = document.getElementById("username").value
+            document.write("Good Morning...." + uname);
         }
     </script>
 </body>
 </html>
+0 comments on commit c8a6941
